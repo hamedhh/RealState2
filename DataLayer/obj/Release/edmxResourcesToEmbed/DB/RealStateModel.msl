@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RealState_DBModelStoreContainer" CdmEntityContainer="RealState_DBEntities">
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="RealState_DBModel.City">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="CityTitle" ColumnName="CityTitle" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conditions">
+      <EntityTypeMapping TypeName="RealState_DBModel.Condition">
+        <MappingFragment StoreEntitySet="Conditions">
+          <ScalarProperty Name="ConditionCode" ColumnName="ConditionCode" />
+          <ScalarProperty Name="ConditionTile" ColumnName="ConditionTile" />
+          <ScalarProperty Name="ConditionID" ColumnName="ConditionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="RealState_DBModel.Country">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CountryTitle" ColumnName="CountryTitle" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cultures">
+      <EntityTypeMapping TypeName="RealState_DBModel.Culture">
+        <MappingFragment StoreEntitySet="Cultures">
+          <ScalarProperty Name="CultureCode" ColumnName="CultureCode" />
+          <ScalarProperty Name="CultureTitle" ColumnName="CultureTitle" />
+          <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facilities">
+      <EntityTypeMapping TypeName="RealState_DBModel.Facility">
+        <MappingFragment StoreEntitySet="Facilities">
+          <ScalarProperty Name="FacilityCode" ColumnName="FacilityCode" />
+          <ScalarProperty Name="FacilityTitle" ColumnName="FacilityTitle" />
+          <ScalarProperty Name="FacilityID" ColumnName="FacilityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeProperties">
+      <EntityTypeMapping TypeName="RealState_DBModel.HomeProperty">
+        <MappingFragment StoreEntitySet="HomeProperties">
+          <ScalarProperty Name="PhoneNum" ColumnName="PhoneNum" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LocLongitude" ColumnName="LocLongitude" />
+          <ScalarProperty Name="LocLatitude" ColumnName="LocLatitude" />
+          <ScalarProperty Name="RentPrice" ColumnName="RentPrice" />
+          <ScalarProperty Name="MortgagePrice" ColumnName="MortgagePrice" />
+          <ScalarProperty Name="HomePrice" ColumnName="HomePrice" />
+          <ScalarProperty Name="LocAge" ColumnName="LocAge" />
+          <ScalarProperty Name="LocArea" ColumnName="LocArea" />
+          <ScalarProperty Name="CreateUserID" ColumnName="CreateUserID" />
+          <ScalarProperty Name="SubUsageID" ColumnName="SubUsageID" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+          <ScalarProperty Name="PropertyTypeID" ColumnName="PropertyTypeID" />
+          <ScalarProperty Name="HomePropertyID" ColumnName="HomePropertyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeProperties_MetaData">
+      <EntityTypeMapping TypeName="RealState_DBModel.HomeProperties_MetaData">
+        <MappingFragment StoreEntitySet="HomeProperties_MetaData">
+          <ScalarProperty Name="ConditionID" ColumnName="ConditionID" />
+          <ScalarProperty Name="FacilityID" ColumnName="FacilityID" />
+          <ScalarProperty Name="HomePropertyID" ColumnName="HomePropertyID" />
+          <ScalarProperty Name="MetaID" ColumnName="MetaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeProperty_Galleries">
+      <EntityTypeMapping TypeName="RealState_DBModel.HomeProperty_Galleries">
+        <MappingFragment StoreEntitySet="HomeProperty_Galleries">
+          <ScalarProperty Name="ImageTitle" ColumnName="ImageTitle" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="HomePropertyID" ColumnName="HomePropertyID" />
+          <ScalarProperty Name="GalleryID" ColumnName="GalleryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeProperty_Status">
+      <EntityTypeMapping TypeName="RealState_DBModel.HomeProperty_Status">
+        <MappingFragment StoreEntitySet="HomeProperty_Status">
+          <ScalarProperty Name="StatusCode" ColumnName="StatusCode" />
+          <ScalarProperty Name="StatusTitle" ColumnName="StatusTitle" />
+          <ScalarProperty Name="PropertyStatusID" ColumnName="PropertyStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HomeProperty_Type">
+      <EntityTypeMapping TypeName="RealState_DBModel.HomeProperty_Type">
+        <MappingFragment StoreEntitySet="HomeProperty_Type">
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="PropertyTypeID" ColumnName="PropertyTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rigions">
+      <EntityTypeMapping TypeName="RealState_DBModel.Rigion">
+        <MappingFragment StoreEntitySet="Rigions">
+          <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+          <ScalarProperty Name="RegionTitle" ColumnName="RegionTitle" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="RigionID" ColumnName="RigionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="RealState_DBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubUsages">
+      <EntityTypeMapping TypeName="RealState_DBModel.SubUsage">
+        <MappingFragment StoreEntitySet="SubUsages">
+          <ScalarProperty Name="SubUsageCode" ColumnName="SubUsageCode" />
+          <ScalarProperty Name="SubUsageTitle" ColumnName="SubUsageTitle" />
+          <ScalarProperty Name="UsageID" ColumnName="UsageID" />
+          <ScalarProperty Name="SubUsageID" ColumnName="SubUsageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usages">
+      <EntityTypeMapping TypeName="RealState_DBModel.Usage">
+        <MappingFragment StoreEntitySet="Usages">
+          <ScalarProperty Name="UsageCode" ColumnName="UsageCode" />
+          <ScalarProperty Name="UsageTitle" ColumnName="UsageTitle" />
+          <ScalarProperty Name="UsageID" ColumnName="UsageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="RealState_DBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="RegisterDate" ColumnName="RegisterDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ActiveCode" ColumnName="ActiveCode" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StateSites">
+      <EntityTypeMapping TypeName="RealState_DBModel.StateSite">
+        <MappingFragment StoreEntitySet="StateSite">
+          <ScalarProperty Name="StateSiteCount" ColumnName="StateSiteCount" />
+          <ScalarProperty Name="StateSiteDate" ColumnName="StateSiteDate" />
+          <ScalarProperty Name="StateSiteID" ColumnName="StateSiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyViews">
+      <EntityTypeMapping TypeName="RealState_DBModel.PropertyView">
+        <MappingFragment StoreEntitySet="PropertyView">
+          <ScalarProperty Name="StringDate" ColumnName="StringDate" />
+          <ScalarProperty Name="PropertyViewCount" ColumnName="PropertyViewCount" />
+          <ScalarProperty Name="PropertyViewDate" ColumnName="PropertyViewDate" />
+          <ScalarProperty Name="HomePropertyID" ColumnName="HomePropertyID" />
+          <ScalarProperty Name="PropertyViewID" ColumnName="PropertyViewID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

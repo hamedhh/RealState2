@@ -1,0 +1,13 @@
+D:\RealStateProject\Utilities\bin\Release\Utilities.dll.config
+D:\RealStateProject\Utilities\bin\Release\Utilities.dll
+D:\RealStateProject\Utilities\bin\Release\Utilities.pdb
+D:\RealStateProject\Utilities\bin\Release\DataLayer.dll
+D:\RealStateProject\Utilities\bin\Release\EntityFramework.dll
+D:\RealStateProject\Utilities\bin\Release\EntityFramework.SqlServer.dll
+D:\RealStateProject\Utilities\bin\Release\DataLayer.pdb
+D:\RealStateProject\Utilities\bin\Release\EntityFramework.xml
+D:\RealStateProject\Utilities\bin\Release\EntityFramework.SqlServer.xml
+D:\RealStateProject\Utilities\bin\Release\fa\DataLayer.resources.dll
+D:\RealStateProject\Utilities\obj\Release\Utilities.csprojResolveAssemblyReference.cache
+D:\RealStateProject\Utilities\obj\Release\Utilities.dll
+D:\RealStateProject\Utilities\obj\Release\Utilities.pdb
