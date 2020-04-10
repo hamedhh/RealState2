@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DataLayer.DB.HomeProperty>
+
+@foreach (var item in Model)
+{
+    <div class="col=md-6">
+        @Html.Partial("_DefaultProperty",item)
+    </div>
+
+}
+@*@for (int i = 0; i < 3; i++)
+{
+    <div class="col-md-6">
+        @Html.Partial("_DefaultProperty")
+
+    </div>
+
+}*@

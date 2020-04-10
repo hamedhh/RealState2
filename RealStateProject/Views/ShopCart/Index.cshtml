@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DataLayer.ViewModels.ShopCartViewModel>
+
+@{
+    ViewBag.Title = "shopCard";
+    Layout = "~/Views/Shared/_LayoutShow.cshtml";
+    int row = 1;
+}
+
+<h2>سبد خرید شما</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>تصویر</th>
+        <th>کالا</th>
+        <th>تعداد</th>
+        <th>قیمت</th>
+        <th>جمع</th>
+        <th>دستورات</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@row</td>
+            <td>
+                <img class="thumbnail" style="max-width: 120px" src="~/Areas/UserPanel/HomePropertyUploadImages/Thumb/@item.ImageName" />
+            </td>
+            <td>@item.Title</td>
+            <td>@item.Count</td>
+            <td>@item.Price</td>
+            <td>@item.Sum</td>
+            <td>
+                <a class="btn btn-danger btn-xs" href="/ShopCart/RemoveFromCart/@item.ProductID">
+                    <i class="glyphicon glyphicon-trash"></i>
+                </a>
+            </td>
+        </tr>
+
+        row++;
+    }
+    <tr>
+        <td colspan="3" class="text-left">
+            جمع تعداد :
+        </td>
+        <td>
+            @Model.Sum(p => p.Count)
+        </td>
+        <td class="text-left">
+            جمع فاکتور :
+        </td>
+        <td colspan="2" class="text-center">
+            <p class="text-success">@Model.Sum(p => p.Sum).ToString("#,0 تومان")</p>
+        </td>
+    </tr>
+</table>
+

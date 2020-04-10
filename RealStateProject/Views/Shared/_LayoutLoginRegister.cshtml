@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<title>Home Property | Register</title>*@
+
+    <link rel="shortcut icon" href="~/assets-fa/img/favicon.ico" type="image/x-icon">
+    @if (System.Globalization.CultureInfo.CurrentCulture.Name.Contains("fa"))
+    {
+
+        <link href="/Content/bootstrap-rtl.css" rel="stylesheet" />
+        <link href="/assets-fa/css/style.css" rel="stylesheet">
+        <link href="/assets-fa/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets-fa/css/slick.css">
+        <link rel="stylesheet" type="text/css" href="/assets-fa/css/nouislider.css">
+        <link rel="stylesheet" href="/assets-fa/css/jquery.fancybox.css" type="text/css" media="screen" />
+        <link id="switcher" href="/assets-fa/css/theme-color/default-theme.css" rel="stylesheet">
+    }
+    else
+    {
+
+        <link href="/assets-en/css/bootstrap.css" rel="stylesheet" />
+        <link href="/assets-en/css/style.css" rel="stylesheet">
+        <link href="/assets-en/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/assets-en/css/slick.css">
+        <link rel="stylesheet" type="text/css" href="/assets-en/css/nouislider.css">
+        <link rel="stylesheet" href="/assets-en/css/jquery.fancybox.css" type="text/css" media="screen" />
+        <link id="switcher" href="/assets-en/css/theme-color/default-theme.css" rel="stylesheet">
+    }
+
+</head>
+<body>
+    <section id="aa-signin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-signin-area">
+                        <div class="aa-signin-form">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery library -->
+    <script src="~/assets-fa/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/assets-fa/js/bootstrap.js"></script>
+    <!-- slick slider -->
+    <script type="text/javascript" src="~/assets-fa/js/slick.js"></script>
+    <!-- Price picker slider -->
+    <script type="text/javascript" src="~/assets-fa/js/nouislider.js"></script>
+    <!-- mixit slider -->
+    <script type="text/javascript" src="~/assets-fa/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="~/assets-fa/js/jquery.fancybox.pack.js"></script>
+    <!-- Custom js -->
+    <script src="~/assets-fa/js/custom.js"></script>
+
+</body>
+</html>
+
+
+
